@@ -39,7 +39,7 @@ function displayPics(){
 
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the constiable declaration from `const to `const`.
   // PUT YOUR RESPONSE IN THIS COMMENT
-  console.log(viewed);
+  // console.log(viewed);
 
   for (let i = 0; i < 3; i++){
     const temp = viewed.shift();
@@ -121,14 +121,14 @@ container.addEventListener(`click`, handleClick);
 
 document.getElementById(`bus`).addEventListener(`click`, function(){
   localStorage.removeItem(`busmall`);
-  console.log(`Local storage was cleared!`);
+  // console.log(`Local storage was cleared!`);
 });
 
 if(localStorage.busmall){
-  console.log(`Local storage data exists`);
+  // console.log(`Local storage data exists`);
   allProducts = JSON.parse(localStorage.busmall);
 } else {
-  console.log(`There is no local storage data; initialize app by creating instances`);
+  // console.log(`There is no local storage data; initialize app by creating instances`);
   for(let i = 0; i < names.length; i++) {
     new Product(names[i]);
   }
